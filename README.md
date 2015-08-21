@@ -11,16 +11,16 @@ _JSONPlaceholder is powered by [JSON Server](https://github.com/typicode/json-se
  * Update `data.json` to reflect your dummy data
  * Alternatively you can modify `seeds.js` to generate your data
  * Create your heroku app
-   ```
+```
    $ heroku apps:create
    Creating desolate-forest-2050... done, stack is cedar-14
    https://desolate-forest-2050.herokuapp.com/ | https://git.heroku.com/desolate-forest-2050.git
    Git remote heroku added
-   ```
+```
  * Push your changes
-   ```
+```
    $ git push heroku master
-   ```
+```
 
 ## Why?
 

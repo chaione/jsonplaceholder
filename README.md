@@ -6,6 +6,22 @@ It's like an [image placeholder](http://placehold.it/) but for web developers.
 
 _JSONPlaceholder is powered by [JSON Server](https://github.com/typicode/json-server)._
 
+## Running Your Dummy API on Heroku
+ * Clone this repository
+ * Update `data.json` to reflect your dummy data
+ * Alternatively you can modify `seeds.js` to generate your data
+ * Create your heroku app
+   ```
+   $ heroku apps:create
+   Creating desolate-forest-2050... done, stack is cedar-14
+   https://desolate-forest-2050.herokuapp.com/ | https://git.heroku.com/desolate-forest-2050.git
+   Git remote heroku added
+   ```
+ * Push your changes
+   ```
+   $ git push heroku master
+   ```
+
 ## Why?
 
 Most of the time when trying a new library, hacking a prototype or following a tutorial, I found myself in need of some data.
@@ -14,7 +30,7 @@ I didn't like the idea of using some public API because I had the feeling that I
 
 But I liked the idea of image placeholders for web designers. So I decided to code a little Express server inspired by that and here is JSONPlaceholder.
 
-You can find it running here and are free to use it in your developments: http://jsonplaceholder.typicode.com. 
+You can find it running here and are free to use it in your developments: http://jsonplaceholder.typicode.com.
 
 Or you can run it locally:
 
@@ -49,7 +65,7 @@ Let's start with resources, JSONPlaceholder provides the usual suspects:
 
 ## How to
 
-Here's some code using jQuery showing what can be done with JSONPlaceholder. 
+Here's some code using jQuery showing what can be done with JSONPlaceholder.
 Since GitHub loads jQuery, you can simply copy and paste these examples in a console.
 
 ### Showing a resource
@@ -97,7 +113,7 @@ $.ajax('http://jsonplaceholder.typicode.com/posts', {
 */
 ```
 
-Note: the resource will not be really created on the server but it will be faked as if. 
+Note: the resource will not be really created on the server but it will be faked as if.
 
 ### Updating a resource
 
@@ -144,7 +160,7 @@ $.ajax('http://jsonplaceholder.typicode.com/posts/1', {
 */
 ```
 
-Note: the resource will not be really updated on the server but it will be faked as if. 
+Note: the resource will not be really updated on the server but it will be faked as if.
 
 ### Deleting a resource
 
@@ -155,7 +171,7 @@ $.ajax('http://jsonplaceholder.typicode.com/posts/1', {
 });
 ```
 
-Note: the resource will not be really deleted on the server but it will be faked as if. 
+Note: the resource will not be really deleted on the server but it will be faked as if.
 
 ### Filtering resources
 
